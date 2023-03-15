@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        .BT
+        {
+            width: 100px;
+            height: 70px;
+            background-color: rgb(173, 210, 243);
+            font-size: 16px;
+            cursor:pointer;
+        }
+
+        .BT:hover 
+        {
+            background-color: rgb(0, 85, 159);
+        }
+
+        .comentarios
+        {
+            width: 90%;
+            height: 200px;
+            resize: none;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    
+<fieldset>
+
+    <legend>Dados do Picolé</legend>
+    Selecione um sabor :
+    <select>
+        <option>Chocolate</option>
+        <option>Morango</option>
+        <option>Uva</option>
+    </select>
+    <br> <br>
+    Escolha uma calda:
+        <input type="radio" name="caldas"> Chocolate
+        <input type="radio" name="caldas"> Morango
+        <br> <br>
+    Escolha a cor da embalagem:
+        <input type="checkbox"> &nbsp; &nbsp; Preta &nbsp; &nbsp;
+        <input type="checkbox">&nbsp; &nbsp; Rosa  &nbsp; &nbsp;
+        <input type="checkbox">&nbsp; &nbsp;Laranja &nbsp;&nbsp;
+        <input type="checkbox">&nbsp; &nbsp;Azul &nbsp;&nbsp;
+    <br> <br>
+
+    Escolha a cor do palito:
+        <input type="color">
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Dados de entrega</legend>
+    Endereço : <input type="text">
+    <br> <br>
+    Cidade : <input type="text">
+    <br> <br>
+    Número : <input type="number">
+    <br> <br>
+    Data de entrega : <input type="date">
+    <br> <br>
+    Comentários: <br>
+    <textarea class="comentarios"></textarea>
+
+</fieldset>
+
+        <button class="BT">ENVIAR</button>       
+        <button class="BT">CANCELAR</button>
+
+</body>
+</html>
